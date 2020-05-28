@@ -29,5 +29,24 @@ public class TestSuite1 {
 		driver.quit();
 		
 	}
+	
+	@Test
+	public void loginTest() throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("http://magento.com");
+		driver.findElement(By.className("account-icon")).click();
+		driver.findElement(By.id("email")).sendKeys("test@gmail.com");
+		driver.findElement(By.id("pass")).sendKeys("welcome");
+		driver.findElement(By.id("send2")).click();
+		Thread.sleep(6000);
+		String error=driver.findElement(By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")).getText();
+		System.out.println(error);
+		Assert.assertEquals(error, "invalid login or password");
+		driver.quit();
+		
+	}
 
 }
