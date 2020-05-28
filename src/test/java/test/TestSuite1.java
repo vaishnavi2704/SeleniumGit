@@ -25,6 +25,7 @@ public class TestSuite1 {
 		Thread.sleep(6000);
 		String error=driver.findElement(By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")).getText();
 		System.out.println(error);
+		System.out.println("Test");
 		Assert.assertEquals(error, "invalid login or password");
 		driver.quit();
 		
