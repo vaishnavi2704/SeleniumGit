@@ -31,7 +31,7 @@ public class TestSuite1 {
 	}
 	
 	@Test
-	public void loginTest3() throws InterruptedException {
+	public void loginTest() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();

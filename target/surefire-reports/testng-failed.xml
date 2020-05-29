@@ -6,6 +6,7 @@
       <class name="test.TestSuite1">
         <methods>
           <include name="login"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- test.TestSuite1 -->
     </classes>
