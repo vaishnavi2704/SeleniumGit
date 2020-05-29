@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.168 s <<< FAILURE! - in TestSuite
-test.TestSuite1.login  Time elapsed: 19.716 s  <<< FAILURE!
-java.lang.AssertionError: expected [invalid login or password] but found [Invalid login or password.]
-	at test.TestSuite1.login(TestSuite1.java:28)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.316 s - in TestSuite
